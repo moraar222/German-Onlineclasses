@@ -7,7 +7,7 @@ const LessonPage: React.FC = () => {
       <div className="bg-white rounded-lg shadow-md overflow-hidden">
         <div className="aspect-w-16 aspect-h-9">
           <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            src="https://www.youtube.com/watch?v=rGrBHiuPlT0&pp=ygUhaW50cm9kdWN0aW9uIHRvIGphcGFuZXNlIGxhbmd1YWdl" // Japanese tutorial
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -15,20 +15,20 @@ const LessonPage: React.FC = () => {
           ></iframe>
         </div>
         <div className="p-6">
-          <h1 className="text-3xl font-bold mb-4">Introduction to React Hooks</h1>
-          <p className="text-gray-600 mb-6">Learn how to use React Hooks to manage state and side effects in functional components.</p>
+          <h1 className="text-3xl font-bold mb-4">Introduction to Japanese Grammar</h1>
+          <p className="text-gray-600 mb-6">Learn the basics of Japanese grammar, including sentence structure and essential particles.</p>
           
           <div className="flex flex-wrap -mx-2 mb-6">
             <div className="w-full md:w-1/2 px-2 mb-4">
               <div className="flex items-center">
                 <Play className="text-blue-600 mr-2" size={20} />
-                <span>Video Length: 15:30</span>
+                <span>Video Length: 20:15</span>
               </div>
             </div>
             <div className="w-full md:w-1/2 px-2 mb-4">
               <div className="flex items-center">
                 <FileText className="text-blue-600 mr-2" size={20} />
-                <span>Transcript </span>
+                <span>Lesson Transcript</span>
               </div>
             </div>
           </div>
@@ -38,19 +38,19 @@ const LessonPage: React.FC = () => {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <CheckCircle className="text-green-500 mr-2" size={20} />
-                <span>Introduction to React Hooks</span>
+                <span>Introduction to Japanese Grammar</span>
               </li>
               <li className="flex items-center">
                 <CheckCircle className="text-green-500 mr-2" size={20} />
-                <span>useState Hook</span>
+                <span>Basic Vocabulary and Phrases</span>
               </li>
               <li className="flex items-center">
                 <CheckCircle className="text-gray-300 mr-2" size={20} />
-                <span>useEffect Hook</span>
+                <span>Verb Conjugation Basics</span>
               </li>
               <li className="flex items-center">
                 <CheckCircle className="text-gray-300 mr-2" size={20} />
-                <span>Custom Hooks</span>
+                <span>Common Sentence Patterns</span>
               </li>
             </ul>
           </div>
@@ -61,8 +61,8 @@ const LessonPage: React.FC = () => {
               <div className="flex items-start mb-4">
                 <img src="https://source.unsplash.com/random/100x100?face" alt="User Avatar" className="w-10 h-10 rounded-full mr-4" />
                 <div>
-                  <h3 className="font-semibold">John Doe</h3>
-                  <p className="text-gray-600">Great explanation of useState! Could you provide more examples of when to use useEffect?</p>
+                  <h3 className="font-semibold">Jane Smith</h3>
+                  <p className="text-gray-600">Great explanation of sentence particles! Could you provide examples of how to use them in casual conversation?</p>
                 </div>
               </div>
               <div className="flex items-center">

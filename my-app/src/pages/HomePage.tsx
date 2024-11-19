@@ -6,16 +6,28 @@ const HomePage: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Litte Explorers School Kenya</h1>
+        <h1 className="text-4xl font-bold mb-4">Welcome to Little Explorers School Kenya</h1>
         <p className="text-xl text-gray-600">Empowering learners worldwide through accessible online education</p>
       </section>
 
       <section className="mb-12">
-        <div className="bg-white rounded-lg shadow-lg p-8" style={{backgroundImage: "url('5 Tips for Teaching Remotely.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div
+          className="bg-white rounded-lg shadow-lg p-8"
+          style={{
+            backgroundImage: "url('5 Tips for Teaching Remotely.jpeg')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
           <div className="bg-black bg-opacity-50 p-6 rounded-lg">
             <h2 className="text-3xl font-bold text-white mb-4">Start Your Learning Journey Today</h2>
             <p className="text-white mb-6">Explore our Japanese and German language courses</p>
-            <Link to="/schedule" className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">Schedule a Lesson</Link>
+            <Link
+              to="/schedule"
+              className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300"
+            >
+              Schedule a Lesson
+            </Link>
           </div>
         </div>
       </section>
@@ -49,13 +61,30 @@ const HomePage: React.FC = () => {
       <section>
         <h2 className="text-2xl font-bold mb-6 text-center">Our Language Courses</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {['Japanese', 'German'].map((language, i) => (
+          {[
+            {
+              language: 'Japanese',
+              image: 'https://i.pinimg.com/736x/cf/f3/25/cff325d63d9eee7e1d1423f47eaa6fd6.jpg',
+            },
+            {
+              language: 'German',
+              image: 'https://i.pinimg.com/736x/c9/c5/e8/c9c5e8b93e1c588fb6b5cb2898b7e2ea.jpg',
+            },
+          ].map(({ language, image }, i) => (
             <div key={i} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src={`https://source.unsplash.com/random/800x600?${language.toLowerCase()}`} alt={`${language} course`} className="w-full h-48 object-cover" />
+              <img
+                src={image}
+                alt={`${language} course`}
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{language} Language Course</h3>
-                <p className="text-gray-600 mb-4">Master {language} with our comprehensive curriculum and interactive lessons.</p>
-                <Link to="/schedule" className="text-blue-600 hover:text-blue-800">Schedule a Lesson →</Link>
+                <p className="text-gray-600 mb-4">
+                  Master {language} with our comprehensive curriculum and interactive lessons.
+                </p>
+                <Link to="/schedule" className="text-blue-600 hover:text-blue-800">
+                  Schedule a Lesson →
+                </Link>
               </div>
             </div>
           ))}
